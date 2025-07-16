@@ -97,9 +97,9 @@ app.post('/register', async (req,res)=>{
 
 
 app.post('/login', (req, res) => {
-    const { email, password } = req.body;
+    const { email, passwrd } = req.body;
 
-    if (!email || !password) {
+    if (!email || !passwrd) {
         return res.status(400).json({ message: 'Invalid input' });
     }
 
